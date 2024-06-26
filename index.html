@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naruto Survival (@shazee_04)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="background" id="background" onkeydown="movement(event);">
+
+
+    <div class="container">
+        <!-- <div class="loader"></div> -->
+
+        <div class="header">
+            <div class="score" id="score">0000</div>
+            <div class="name" id="name">naruto</div>
+        </div>
+
+        <img src="Idle.gif" class="sprite" id="sprite">
+        <img src="base2.png" class="base" id="base">
+        <img src="menu.gif" class="menu" id="menu">
+
+        <div class="menudiv" id="menudiv">
+            <div class="menutext" id="menutext"  onclick="clickstart();" >Press "Enter" To Begin</div>
+        </div>
+
+        <div class="infodiv" id="infodiv">
+            <a href="info/info.html" target="_blank" title="details">
+                <div class="infocard">
+                    <div><img src="info.png" class="infoimage"></div>
+                    <div class="infotext">info</div>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="gameoverdiv" id="gameoverdiv">
+            <div class="gameovercard" id="gameovercard"  onclick="clickstart();" >
+                <div class="gameovertext" id="gameovertext">Game over</div>
+                <div class="gameovertext2" id="gameovertext2">-Press "Enter" to restart-</div>
+            </div>
+        </div>
+
+    </div>
+
+    <audio autoplay loop="true" id="theme">
+        <source src="Theme.mp3" type="audio/ogg">
+        <source src="Theme.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js">
+        // window.addEventListener("load", () => {
+        //     const loader = document.querySelector(".loader");
+        //     loader.classList.add("loader--hidden");
+        // })
+    </script>
